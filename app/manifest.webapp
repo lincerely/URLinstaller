@@ -1,5 +1,5 @@
 {
-  "name": "URL Install",
+  "name": "URL Installer",
   "description": "An application for firefox mobile install app with a manifest url.",
   "launch_path": "/index.html",
   "icons": {
