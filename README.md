@@ -10,6 +10,8 @@ App Installation API document:https://developer.mozilla.org/en-US/docs/Archive/M
 ### Installation
 You can install this app with WebIDE.
 
+OR, install this app through this app's Github pages:https://lincerely.github.io/URLinstaller/
+
 License
 ----
 
