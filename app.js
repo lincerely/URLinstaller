@@ -1,5 +1,5 @@
 // get a reference to the install button
-var button = document.getElementById('install');
+var button = document.getElementById('install')
 var clear = document.getElementById('clear');
 
 clear.addEventListener('click',function(){
@@ -8,10 +8,33 @@ clear.addEventListener('click',function(){
 
 // if browser has support for installable apps, run the install code; it not, hide the install button
 if('mozApps' in navigator) {
+  function install(ev){
+    ev.preventDefault();
 
-    function install(ev) {
+    //try to install as package, if failed: install as host
+    if(!installPackage(ev)){
+      installHost(ev);
+    }
+  }
+    function installPackage(ev) {
       ev.preventDefault();
       // install the app
+      var installLocFind = navigator.mozApps.installPackage(document.getElementById('url').value);
+      installLocFind.onsuccess = function(data) {
+        // App is installed, do something if you like
+        return true;
+      };
+      installLocFind.onerror = function() {
+        // App wasn't installed, info is in
+        // installapp.error.name
+        alert("fail to install as package app, now install as host app")
+        alert(installLocFind.error.name);
+        return false;
+      };
+    };
+    function installHost(ev){
+      ev.preventDefault();
+
       var installLocFind = navigator.mozApps.install(document.getElementById('url').value);
       installLocFind.onsuccess = function(data) {
         // App is installed, do something if you like
@@ -19,9 +42,10 @@ if('mozApps' in navigator) {
       installLocFind.onerror = function() {
         // App wasn't installed, info is in
         // installapp.error.name
+        alert("fail to install as host app")
         alert(installLocFind.error.name);
       };
-    };
+    }
 
     button.addEventListener('click', install, false);
 
