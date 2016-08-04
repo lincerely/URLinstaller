@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Install firefox OS App from url</title>
+
+    <style>
+      body {
+        background-color: #00AACC;
+        color: white;
+        font-family: sans-serif;
+      }
+      span{
+        border: 2px solid white;
+        border-radius: 7vw;
+        background-color: white;
+        padding: 2vw 7vw;
+        font-size: 7vw;
+        color: #00AACC;
+
+      }
+      h1{
+        text-align: left;
+        font-size: 16px;
+        font-size: 20vw;
+        margin-bottom: 0;
+      }
+      input{
+        padding: 2vw 5vw;
+        width: 90%;
+        font-size: 5vw;
+        margin-bottom: 7vw;
+      }
+      div{
+        margin: auto;
+      }
+      #clear{
+        border-color: red;
+        background-color: red;
+        color: white;
+      }
+    </style>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body>
+    <h1>URL Installer</h1>
+    <h2 id="notice">To install firefox OS app,<br/>please provide a link to its manifest:</h2>
+    <div id="form">
+      <input type="text" id="url"/>
+      <div>
+        <span id="install">Install</span>
+        <span id="clear">Clear</span>
+      </div>
+    </div>
+    <div>
+      <br />
+      <br />
+      <p><a href="" target="_blank"><img style="width: 20%;" src="img/GitHub_Logo.png"/></a> | <a href="http://github.com/lincerely" target="_blank"><img style="width: 8%;" src="img/GitHub-Mark-32px.png"/></a></p>
+
+
+    </div>
+
+  </body>
+
+</html>
