@@ -10,6 +10,11 @@ clear.addEventListener('click',function(){
 if('mozApps' in navigator) {
   function install(ev){
     ev.preventDefault();
+    
+    //if the url not ends with manifest.webapp, add 'manifest.webapp'.
+    if(!document.getElementById('url').value.endsWith('manifest.webapp')){
+      document.getElementById('url').value+='manifest.webapp';
+    }
 
     //try to install as package, if failed: install as host
     if(!installPackage(ev)){
