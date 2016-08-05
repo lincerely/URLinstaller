@@ -1,5 +1,7 @@
 # URL Installer
 
+####You are now on the master branch, this branch is for installing as a package d app.
+
 URL Installer is an experimental firefox os application for installing web app through the manifest url.
 
 App Installation API document:
