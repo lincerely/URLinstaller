@@ -17,5 +17,16 @@
     "url": "http://github.com/lincerely"
   },
   "chrome": { "navigation": false },
-  "fullscreen": "true"
+  "fullscreen": "true",
+  
+ "activities":{
+   "share":{
+     "href":"/URLinstaller/index.html",
+     "disposition": "window",
+     "filters":{
+       "type":["url"]
+     },
+     "returnValue": false
+   }
+ }
 }
