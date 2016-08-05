@@ -58,3 +58,15 @@ if('mozApps' in navigator) {
   document.getElementById('form').style.display = "none";
   document.getElementById('notice').innerHTML = "Sorry, your browser does not support installable web app. <br> Please switch to firefox OS's browser."
 }
+
+//handle activity
+navigator.mozSetMessageHandler('activity', function(activityRequest) {
+  var option = activityRequest.source;
+  
+  if (option.name === "share") {
+    // Do something to handle the activity
+    document.getElementById('url').value = option.data.url;
+    
+    
+  }
+});
