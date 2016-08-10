@@ -5,6 +5,7 @@ URL Installer is an experimental firefox os application for installing web app t
 App Installation API document:
 https://developer.mozilla.org/en-US/docs/Archive/Marketplace/API/App_installation_and_management_APIs#Installation_API
 
+<img alt="screen shot" src="https://github.com/lincerely/URLinstaller/blob/gh-pages/ScreenShot.png?raw=true" width="240">
 ## Features
 - Install hosted app or packaged app from a url **within a single click**.
 - **Auto insert "manifest.webapp"** at the end of the url when you press the install button.
