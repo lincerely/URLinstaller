@@ -17,7 +17,7 @@ You can install this app with WebIDE.
 OR, install this app through this app's Github pages:
 https://lincerely.github.io/URLinstaller/
 
-##How To use URLinstaller
+## How To use URLinstaller
  - Install *URLinstaller* to your devices.
  - In the FFOS browser, navigate to the web app that you wish to install to your phone.
  - Press on the share button.
@@ -25,9 +25,9 @@ https://lincerely.github.io/URLinstaller/
  - Press install in *URLinstaller*.
  - Enjoy!
 
-##TODO
+## TODO
  - install zip from local?
 
 
-##License
+## License
 MIT
